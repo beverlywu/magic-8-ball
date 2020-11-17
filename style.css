@@ -1,0 +1,102 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #454545;
+  margin: 0px;
+  padding: 0px;
+  /*background-color: #f8f8f8 #4f2999;*/
+  /*background-image: url('bkgd2.png');
+  background-size: cover;*/
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.page {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+  width: 30vw;
+	height: 30vw;
+  max-width: 960px;
+  margin: 2%;
+	background: radial-gradient( #4f2999 10%, transparent 70%);
+	border-radius: 10%;
+	padding: 20vh;
+}
+.ball, .button {
+  margin: 0 auto;
+  position:relative; 
+  width:100%;
+}
+
+.ball {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+.ball img {
+	width: 100%;
+}
+
+.answer {
+  position:absolute;
+  width:15%;
+	height: 20%;
+  top:24%;
+  left:40%;
+	padding: 5%;
+  /*margin-top:-60px;
+  margin-left:-65px;*/
+  font: 12px 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #222;
+  text-transform: uppercase;
+	background: radial-gradient(#f8f8f8, transparent 70%);
+	border-radius: 50%;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	color: #fff;
+	
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 5%;
+}
+
+#questionButton {
+  font: 20px 'Montserrat', Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+  border: none;
+  color: #f8f8f8;
+  background-color: #00ccf5;
+  padding: 10px ;
+  display: block;
+  margin: 0;
+}
+
+header {
+  padding-top: 0.25em;
+  text-align: center;
+	color: #fff;
+}
+header span {
+	color: #88effc;	
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
