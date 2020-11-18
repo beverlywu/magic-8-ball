@@ -8,20 +8,19 @@ body {
   background-size: cover;*/
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 .page {
 	display: flex;
 	flex-flow: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-  width: 40vw;
+	width: 100%;
 	min-width: 600px;
   max-width: 960px;
-  margin: 2%;
 	background: radial-gradient( #4f2999 10%, transparent 70%);
 	border-radius: 10%;
-	padding: 20vh;
+	padding: 10vw;
 }
 .ball, .button {
   margin: 0 auto;
@@ -45,7 +44,7 @@ body {
 }
 
 .answer {
-  position:absolute;
+  position: absolute;
   width:15%;
 	height: 20%;
   top:24%;
@@ -86,7 +85,7 @@ body {
 header {
   padding-top: 0.25em;
   text-align: center;
-	color: #fff;
+	color: #444;
 }
 header span {
 	color: #88effc;	
@@ -105,4 +104,10 @@ footer p {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
+}
+
+@media only screen and (min-width:768px) {
+	.answer {
+		font-size: 40px;
+	}
 }
