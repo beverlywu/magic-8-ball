@@ -16,8 +16,8 @@ body {
 	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
-	min-width: 600px;
-  max-width: 800px;
+	min-width: 300px;
+  max-width: 700px;
 	background: radial-gradient( #4f2999 10%, transparent 70%);
 	border-radius: 10%;
 	padding: 10vw;
