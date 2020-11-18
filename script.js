@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var question;
 	
 var magic8Ball = {};
-magic8Ball.answers = ["don't bother me", "why do you want to know", "avoid at all costs", "duh", "yes", "haha no", "answer your own damn question"];
+magic8Ball.answers = [ "vegetables", "meat", "pizza"];
 
 magic8Ball.askQuestion = function(question) {
 	var randomNumber = Math.random();
@@ -13,16 +13,26 @@ magic8Ball.askQuestion = function(question) {
 	console.log(question);
 	console.log(answer);
 	$("#answer").text(answer)
-			//.css("background", "radial-gradient(#fafafa, transparent)");
-	
+			//.css("background", "radial-gradient(#fafafa, transparent)");	
+	$("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/answerside.png");
+	$("#ball").effect("shake");
+	$("#answer").fadeIn(4000);
+			
 };
+$("#answer").hide();
 
 //magic8Ball.askQuestion("Will I learn Javascript?");
 
 	
 function questionButton() {
-	question = prompt("Ask the Magic 8 ball your question");
-	magic8Ball.askQuestion(question);
+	$("#answer").hide();
+	$("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballQuestion.png");
+	setTimeout (
+		function() {
+			question = prompt("Ask a yes or no question");
+			magic8Ball.askQuestion(question);
+		}, 500);
+	
 }
 
 //document.getElementById("questionButton").addEventListener("click", questionButton);
@@ -31,4 +41,3 @@ $("#questionButton").click(questionButton);
 
 	
 });
-
