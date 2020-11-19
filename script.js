@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var question;
 	
 var magic8Ball = {};
-magic8Ball.answers = [ "are you crazy?!", "heck no", "no way", "YES", "decide for me"];
+magic8Ball.answers = [ "are you crazy?!", "heck no", "no way", "YES", "decide for me", "probably not"];
 
 magic8Ball.askQuestion = function(question) {
 	var randomNumber = Math.random();
